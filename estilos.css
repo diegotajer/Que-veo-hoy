@@ -80,9 +80,7 @@ main{
 }
 
 /* Teléfonos */
-@media only screen and (max-width: 900px){
-    main{background-image: none}
-    }
+
     
 
 /*.tapa
@@ -174,7 +172,34 @@ h2{text-align: center;}
     "gallery-img3 gallery-img4"
     "gallery-img5 gallery-img6"
 }
+
+
+/*
+.gallery-container a {display: block;}
+
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
   
+  .photo-grid a {
+    display: block;
+  }
+  
+  .photo-grid img {
+    max-width: 100%;
+    height: auto;
+  }*/
+
+
 .gallery-item{
     border: 3px solid black;
     background-size: cover;
