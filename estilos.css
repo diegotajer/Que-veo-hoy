@@ -279,8 +279,14 @@ text-decoration:none}
     }}
 
     @media only screen and (max-width: 575px){
+    .team-image {
+        width: 200px;
+        height: auto;
+      }}
+
+    @media only screen and (max-width: 575px){
         .gallery-container{grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 75px);
+            grid-template-rows: repeat(6, 120px);
             grid-template-areas:
             "gallery-img1"
             "gallery-img2"
