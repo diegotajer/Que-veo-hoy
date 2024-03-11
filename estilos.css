@@ -106,39 +106,6 @@ h2{text-align: center;}
 
 
 
-/*
-.nosotros
-{   display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;}
-
-.servicios {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-
-
-.criticas img{
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-}
-
-.criticas p{font-weight: bold;
-    margin: 10px;}
-
-
-.criticas {
-    display: grid;
-  }
-  */
-
-
 .team{
     display: flex;
     flex-direction: column;
@@ -174,32 +141,6 @@ h2{text-align: center;}
 }
 
 
-/*
-.gallery-container a {display: block;}
-
-.gallery-container img {
-    max-width: 100%;
-    height: auto;
-  }
-
-
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-  }
-  
-  .photo-grid a {
-    display: block;
-  }
-  
-  .photo-grid img {
-    max-width: 100%;
-    height: auto;
-  }*/
-
-
 .gallery-item{
     border: 3px solid black;
     background-size: cover;
@@ -207,6 +148,7 @@ h2{text-align: center;}
     filter: grayscale(80%);
     transition: all 0,9s;
 }
+
 
 .gallery-item:hover{
     filter:grayscale(0%);
@@ -267,39 +209,6 @@ font-family: "Montserrat", sans-serif;
 background-color: #000;
 text-decoration:none}
 
-/*.item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .item:hover .overlay {
-    opacity: 1;
-  }
-  
-  .item .overlay a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 10px 20px;
-    background: #333;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-  
-  .item .overlay a:hover {
-    background: #555;
-  }*/
 
 .item{
     border: 3px solid black;
@@ -354,11 +263,11 @@ text-decoration:none}
     background-image: url(img/shogun.jpg);
 }
 
+/*Teléfono*/
 
-/* Teléfonos */
 @media only screen and (max-width: 575px){
     .galeria{grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 200px);
+        grid-template-rows: repeat(6, 75px);
         grid-template-areas:
         "img1"
         "img2"
@@ -367,8 +276,21 @@ text-decoration:none}
         "img5"
         "img6"
         "img7"
-    }
-    }
+    }}
+
+    @media only screen and (max-width: 575px){
+        .gallery-container{grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 75px);
+            grid-template-areas:
+            "gallery-img1"
+            "gallery-img2"
+            "gallery-img3"
+            "gallery-img4"
+            "gallery-img5"
+            "gallery-img6"
+        }}
+
+
 
 /* Tablet */
 
@@ -382,18 +304,13 @@ text-decoration:none}
     "img6 img7"}
 }
 
+/* Computadora */
+
 @media only screen and (min-width: 901px) {
     .galeria{grid-template-columns: 1fr 1fr 1fr;
     /*grid-template-rows: repeat(4, 200px);*/}
 }
 
-
-.servicios img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-  }
 
 .call p{
     margin-bottom: 20px;
@@ -463,9 +380,3 @@ footer p{
     border-radius: 50%;
     box-shadow: 0 0 5px 3px #fff;
 }
-
-.criticas{display:flex;
-justify-content: center;
-margin: 10px;}
-
-.imagen{margin: 10px}
