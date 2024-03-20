@@ -15,6 +15,9 @@ header{
     padding: 20px;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -40,9 +43,10 @@ header{
     cursor: pointer;
   }
 
+/*
 .logo{
     float: left;
-    /*font-weight: bold;
+    font-weight: bold;
     color: black;
     text-shadow: 0 0 5px #ccc;
     background-image: url(img/logoposta.png);*/
