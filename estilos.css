@@ -157,17 +157,16 @@ h2{text-align: center;}
 
 .gallery-item1{
     grid-area: gallery-img1;
-    background-image: url(img/Starplus.png);
 }
 
 .gallery-item2{
     grid-area: gallery-img2;
-    background-image: url(img/hbo.png);
+    /*background-image: url(img/hbo.png);*/
 }
 
 .gallery-item3{
     grid-area: gallery-img3;
-    background-image: url(img/amazon.png);
+    /*background-image: url(img/amazon.png);*/
 }
 
 .gallery-item4{
@@ -337,6 +336,7 @@ h2{
     font-family: "Montserrat", sans-serif;
 }
 
+/*
 .sec{
     height: 650px;
     width: 100%;
@@ -349,7 +349,7 @@ h2{
     color: grey;
     font-size: 20px;
 }
-
+*/
 
 footer{
     background-color: white;
