@@ -232,7 +232,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 480px) {
 	.galeria {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(6, 75px);
@@ -260,9 +260,14 @@ footer {
 		filter: none;
 		transition: none;
 		}
-}
 
-@media only screen and (min-width: 576px) and (max-width: 900px) {
+	.logo{display: none;
+	}
+
+	}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 	.galeria {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(4, 200px);
@@ -277,9 +282,13 @@ footer {
 		font-size: 15px;
 	}
 
+	.portada {display: none;}
+
 }
-@media only screen and (min-width: 901px) {
+
+@media only screen and (min-width: 769px) {
 	.galeria {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+	.portada {display: none;}
 }
