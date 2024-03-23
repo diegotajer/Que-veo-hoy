@@ -247,6 +247,9 @@ footer {
 		grid-template-rows: repeat(6, 120px);
 		grid-template-areas: "gallery-img1" "gallery-img2" "gallery-img3" "gallery-img4" "gallery-img5" "gallery-img6";
 	}
+	.navbar {
+		font-size: 13px;
+	}
 }
 @media only screen and (min-width: 576px) and (max-width: 900px) {
 	.galeria {
@@ -258,6 +261,10 @@ footer {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(3, 200px);
 		grid-template-areas: "gallery-img1 gallery-img2" "gallery-img3 gallery-img4" "gallery-img5 gallery-img6";
+	}
+
+	.navbar {
+		font-size: 15px;
 	}
 }
 @media only screen and (min-width: 901px) {
