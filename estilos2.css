@@ -299,6 +299,9 @@ footer p {
     width: 150px;
     height: auto;
   }
+  .equipo {
+    display: none;
+  }
   /*
   	.gallery-container {
   		grid-template-columns: 1fr;
@@ -334,12 +337,20 @@ footer p {
   .team p {
     text-align: center;
   }
+  .carousel-item h5 {
+    background-color: black;
+    color: white;
+    font-size: small;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
     grid-template-areas: "img1 img2" "img3 img4" "img3 img5" "img6 img7";
+  }
+  .equipo2 {
+    display: none;
   }
   /*
   .gallery-container {
@@ -365,11 +376,17 @@ footer p {
   .portada {
     display: none;
   }
+  .equipo2 {
+    display: none;
+  }
 }
 @media only screen and (min-width: 900px) {
   .team-image {
     width: 300px;
     height: auto;
+  }
+  .equipo2 {
+    display: none;
   }
 }
 
