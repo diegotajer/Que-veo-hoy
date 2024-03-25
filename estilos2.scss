@@ -125,7 +125,7 @@ form{
 	grid-gap: 20px;
 	padding: 20px;
 	grid-template-columns: repeat(3, fr fr fr);
-	grid-template-rows: repeat(3,150px);
+	grid-template-rows: repeat(2,150px);
 	grid-template-areas: "gallery-img1 gallery-img2 gallery-img3" "gallery-img4 gallery-img5 gallery-img6";
 }
 .gallery-item {
