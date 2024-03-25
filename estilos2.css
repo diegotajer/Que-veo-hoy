@@ -195,6 +195,11 @@ form input[type=submit] {
   border-radius: 5px;
 }
 
+.contacto-descripcion {
+  text-align: center;
+  margin: 25px;
+}
+
 .galeria {
   height: auto;
   width: 100%;
