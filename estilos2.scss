@@ -36,6 +36,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+
+
 .flex-container {
 	display: flex;
 	flex-direction: row;
@@ -44,6 +46,8 @@ header {
 	align-content: flex-start;
 	align-items: center;
 }
+
+
 .flex-item {
 	flex-grow: 1;
 	flex-shrink: 0;
@@ -54,6 +58,7 @@ header {
 	img {
 		cursor: pointer;
 	}
+
 }
 main {
 	height: 100vh;
@@ -99,24 +104,51 @@ form{
 	align-items: center;
 }
 
+.descripcion_del_equipo{
+	p {text-align: center;}
+}
+
+.carousel-item {
+	h5{
+		background-color:black;
+		color:white;
+	}
+	
+	img{aspect-ratio: 3/2;
+	width: 100%;
+	height: auto;
+	}
+}
+
+
 
 .team {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	flex-wrap:wrap;
+	justify-content:space-around;
 	p {
 		text-align: center;
 	}
 }
+
 .team-image {
-	width: 300px;
+	width: 250px;
 	height: auto;
 }
+
 .team-caption {
-	margin-top: 10px;
+	margin-top: 3px;
+	font-size: small;
 	text-align: center;
-	font-style: italic;
-}
+} 
+
+.team-description {
+	font-size: smaller;
+	text-align: center;
+} 
+
+/*
 .gallery-container {
 	height: auto;
 	width: 100%;
@@ -160,6 +192,25 @@ form{
 	grid-area: gallery-img6;
 	background-image: url(img/appletv.jpg);
 }
+*/
+
+form{ 
+	input[type=text]{
+		border: 1px solid;
+		border-radius: 5px;
+	  }
+	textarea{
+		border: 1px solid ;
+		border-radius: 5px;
+	  }
+	input[type=submit]{
+		border: 1px solid ;
+		border-radius: 5px;
+	  }
+	}
+
+
+
 .galeria {
 	height: auto;
 	width: 100%;
@@ -247,14 +298,16 @@ footer {
 		grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7";
 	}
 	.team-image {
-		width: 200px;
+		width: 150px;
 		height: auto;
 	}
+/*
 	.gallery-container {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(6, 120px);
 		grid-template-areas: "gallery-img1" "gallery-img2" "gallery-img3" "gallery-img4" "gallery-img5" "gallery-img6";
 	}
+	*/
 	.navbar {
 		font-size: 13px;
 	}
@@ -264,10 +317,12 @@ footer {
 	transition: none;
 	}
 
+	/*
 	.gallery-item{
 		filter: none;
 		transition: none;
 		}
+*/
 
 	.logo{display: none;
 	}
@@ -284,22 +339,37 @@ footer {
 		grid-template-rows: repeat(4, 200px);
 		grid-template-areas: "img1 img2" "img3 img4" "img3 img5" "img6 img7";
 	}
+	/*
 	.gallery-container {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(3, 200px);
 		grid-template-areas: "gallery-img1 gallery-img2" "gallery-img3 gallery-img4" "gallery-img5 gallery-img6";
-	}
+	}*/
 	.navbar {
 		font-size: 15px;
+	}
+
+	.team-image {
+		width: 200px;
+		height: auto;
 	}
 
 	.portada {display: none;}
 
 }
 
+
+
 @media only screen and (min-width: 769px) {
 	.galeria {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.portada {display: none;}
+}
+
+@media only screen and (min-width: 900px) {
+	.team-image{
+		width: 300px;
+		height:auto;
+	}
 }

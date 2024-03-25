@@ -97,75 +97,102 @@ form {
   align-items: center;
 }
 
+.descripcion_del_equipo p {
+  text-align: center;
+}
+
+.carousel-item h5 {
+  background-color: black;
+  color: white;
+}
+.carousel-item img {
+  aspect-ratio: 3/2;
+  width: 100%;
+  height: auto;
+}
+
 .team {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .team p {
   text-align: center;
 }
 
 .team-image {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
 .team-caption {
-  margin-top: 10px;
+  margin-top: 3px;
+  font-size: small;
   text-align: center;
-  font-style: italic;
 }
 
+.team-description {
+  font-size: smaller;
+  text-align: center;
+}
+
+/*
 .gallery-container {
-  height: auto;
-  width: 100%;
-  background-color: white;
-  display: grid;
-  grid-gap: 20px;
-  padding: 20px;
-  grid-template-columns: repeat(3, fr fr fr);
-  grid-template-rows: repeat(2, 150px);
-  grid-template-areas: "gallery-img1 gallery-img2 gallery-img3" "gallery-img4 gallery-img5 gallery-img6";
+	height: auto;
+	width: 100%;
+	background-color: $background-color_1;
+	display: grid;
+	grid-gap: 20px;
+	padding: 20px;
+	grid-template-columns: repeat(3, fr fr fr);
+	grid-template-rows: repeat(2,150px);
+	grid-template-areas: "gallery-img1 gallery-img2 gallery-img3" "gallery-img4 gallery-img5 gallery-img6";
 }
-
 .gallery-item {
-  border: 3px solid black;
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(80%);
-  transition: all 0, 9s;
+	border: 3px solid black;
+	background-size: cover;
+	background-position: center;
+	filter: grayscale(80%);
+	transition: all 0,9s;
+	&:hover {
+		filter: grayscale(0%);
+		transform: scale(1.03);
+	}
 }
-.gallery-item:hover {
-  filter: grayscale(0%);
-  transform: scale(1.03);
-}
-
 .gallery-item1 {
-  grid-area: gallery-img1;
+	grid-area: gallery-img1;
 }
-
 .gallery-item2 {
-  grid-area: gallery-img2;
+	grid-area: gallery-img2;
 }
-
 .gallery-item3 {
-  grid-area: gallery-img3;
+	grid-area: gallery-img3;
 }
-
 .gallery-item4 {
-  grid-area: gallery-img4;
-  background-image: url(img/paramount.png);
+	grid-area: gallery-img4;
+	background-image: url(img/paramount.png);
 }
-
 .gallery-item5 {
-  grid-area: gallery-img5;
-  background-image: url(img/netflix.png);
+	grid-area: gallery-img5;
+	background-image: url(img/netflix.png);
 }
-
 .gallery-item6 {
-  grid-area: gallery-img6;
-  background-image: url(img/appletv.jpg);
+	grid-area: gallery-img6;
+	background-image: url(img/appletv.jpg);
+}
+*/
+form input[type=text] {
+  border: 1px solid;
+  border-radius: 5px;
+}
+form textarea {
+  border: 1px solid;
+  border-radius: 5px;
+}
+form input[type=submit] {
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .galeria {
@@ -264,14 +291,16 @@ footer p {
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7";
   }
   .team-image {
-    width: 200px;
+    width: 150px;
     height: auto;
   }
-  .gallery-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 120px);
-    grid-template-areas: "gallery-img1" "gallery-img2" "gallery-img3" "gallery-img4" "gallery-img5" "gallery-img6";
-  }
+  /*
+  	.gallery-container {
+  		grid-template-columns: 1fr;
+  		grid-template-rows: repeat(6, 120px);
+  		grid-template-areas: "gallery-img1" "gallery-img2" "gallery-img3" "gallery-img4" "gallery-img5" "gallery-img6";
+  	}
+  	*/
   .navbar {
     font-size: 13px;
   }
@@ -279,10 +308,12 @@ footer p {
     filter: none;
     transition: none;
   }
-  .gallery-item {
-    filter: none;
-    transition: none;
-  }
+  /*
+  	.gallery-item{
+  		filter: none;
+  		transition: none;
+  		}
+  */
   .logo {
     display: none;
   }
@@ -297,13 +328,18 @@ footer p {
     grid-template-rows: repeat(4, 200px);
     grid-template-areas: "img1 img2" "img3 img4" "img3 img5" "img6 img7";
   }
+  /*
   .gallery-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas: "gallery-img1 gallery-img2" "gallery-img3 gallery-img4" "gallery-img5 gallery-img6";
-  }
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: repeat(3, 200px);
+  	grid-template-areas: "gallery-img1 gallery-img2" "gallery-img3 gallery-img4" "gallery-img5 gallery-img6";
+  }*/
   .navbar {
     font-size: 15px;
+  }
+  .team-image {
+    width: 200px;
+    height: auto;
   }
   .portada {
     display: none;
@@ -315,6 +351,12 @@ footer p {
   }
   .portada {
     display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .team-image {
+    width: 300px;
+    height: auto;
   }
 }
 
