@@ -16,9 +16,14 @@
 </head>
 
 <style>
- @media only screen and (min-width: 700px){
-    main{background-image: url('img/gentemiratv2.png')}
-    }
+  main {
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: left;}
+
+ @media only screen and (min-width: 700px){main{
+    background-image: url('img/gentemiratv2.png')}}
   </style>
 
 
@@ -52,7 +57,7 @@
         <div class="call">
             <h1>Una guía de servicios de streaming</h1>
             <p>Qué Veo Hoy conecta a los consumidores con las plataformas de streaming, describiendo las novedades en cartelera y compartiendo críticas de expertos.</p>
-            <a href="pages/servicios.html">Ver servicios</a>
+            <a id="botoncito" href="pages/servicios.html">Ver servicios</a>
         </div>
     </main>
 
@@ -73,6 +78,19 @@
             </a>
         </div>
     </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+    
+    <script src='main.js'></script>
 </body>
 
 </html>
