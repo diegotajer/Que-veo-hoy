@@ -15,69 +15,96 @@
 
 </head>
 
-<style>
-  main {
-	height: 100vh;
-	width: 100%;
-	background-size: cover;
-	background-position: left;}
 
- @media only screen and (min-width: 700px){main{
-    background-image: url('img/gentemiratv2.png')}}
-  </style>
 
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logoposta.png" width = "70%">
+  <header>
+    <nav class="navbar navbar-expand-sm ">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logoposta_trans.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" items collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+          <a class="nav-link active" href="../index.html">Inicio</a>
+          <a class="nav-link" href="pages/criticas.html">Novedades</a>
+          <a class="nav-link" href="pages/buscador.html">Buscador</a>
+          <a class="nav-link" href="pages/servicios.html">Servicios</a>
+          <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+          <a class="nav-link" href="pages/contacto.html">Contacto</a>
         </div>
+        </div>
+        </div>
+      </nav>
 
-          <nav class="navbar navbar-expand navbar-light" style="background-color: white;">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                  <a class="nav-link" href="pages/criticas.html">Críticas</a>
-                  <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="pages/servicios.html">Servicios</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
+</header> 
 
     <main>
-        <div class = "portada">
-          <img src="img/logoposta.png" width = "200px">
-        </div>
 
-        <div class="call">
-            <h1>Una guía de servicios de streaming</h1>
-            <p>Qué Veo Hoy conecta a los consumidores con las plataformas de streaming, describiendo las novedades en cartelera y compartiendo críticas de expertos.</p>
-            <a id="botoncito" href="pages/servicios.html">Ver servicios</a>
-        </div>
+        <h1><img src="img/logo_letras_grande_trans.png" width="50%"></h1>
+        <h2>Una guía de servicios de streaming</h2>
+        <div class="container">
+
+          <div class="row ">
+     
+                  <div class="col-sm-6 logotapa">
+                   <img  src="img/logogrande_ojo_trans2.png" alt = "Logo" width="60%">
+                  </div>
+     
+     
+                  <div class="col-sm-6">
+                    <div class="call">
+
+                      <p>Qué Veo Hoy conecta a los consumidores con las plataformas de streaming, describiendo las novedades en cartelera y compartiendo críticas de expertos.</p>
+                      <a id="botoncito" href="pages/buscador.html">Ver catálogo</a>
+                  </div>
+                  </div>
+            </div>
+            </div>
+
+        
     </main>
 
 
 
 
     <footer>
-        <p>Todos los derechos son reservados por Copyright</p>
-        <div class="redes">
-            <a href="">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-square-facebook"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-square-x-twitter"></i>
-            </a>
-        </div>
-    </footer>
+      <div class="container">
+      <div class="row gy-2">
+
+          <div class="col sm-4"> © Qué veo hoy, 2024. Todos los derechos reservados.</div>
+
+          <div class="col sm-4 mapadelsitio"> <b>Mapa del sitio</b>:
+            <ul id="mapita">
+              <li><a>Home</li></a>
+              <li><a href="pages/nosotros.html"> Nosotros</a></li>
+              <li><a href="pages/buscador.html">Buscador</a></li>
+              <li><a href="pages/servicios.html">Servicios</a></li>
+              <li><a href="pages/criticas.html">Novedades</a></li>
+              
+              <li><a href="pages/contacto.html"> Contacto</a></li>
+            </ul> 
+          </div>
+         
+          <div class="col sm-4"> 
+
+          <p>Visitanos en nuestras redes sociales:</p>
+          <div class="redes">
+          <a href="">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+              <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="">
+              <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+          </div>
+          </div>
+      </div>
+  </footer>
 
   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
