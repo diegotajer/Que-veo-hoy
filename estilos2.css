@@ -47,6 +47,23 @@ header .navbar .logo {
   transition-duration: 2s;
 }
 
+.cartelprincipal {
+  font-size: 4em;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-link {
   font-weight: bold;
 }
@@ -149,7 +166,7 @@ footer p {
 }
 
 /*CONTACTO*/
-form {
+.formulario {
   color: white;
   display: flex;
   flex-direction: column;
@@ -161,22 +178,68 @@ form {
   margin: auto;
   padding: 30px;
 }
-form input[type=text] {
+.formulario input[type=text] {
   border: 1px solid;
   border-radius: 5px;
 }
-form textarea {
+.formulario textarea {
   border: 1px solid;
   border-radius: 5px;
 }
-form input[type=submit] {
+.formulario input[type=submit] {
   border: 1px solid;
   background-color: gray;
   border-radius: 5px;
   color: white;
   padding: 5px;
+  margin: 5px;
 }
-form input[type=submit]:hover {
+.formulario input[type=submit]:hover {
+  background-color: black;
+}
+
+.contacto-descripcion {
+  font-size: larger;
+}
+
+.descripcion-servicios {
+  font-size: larger;
+}
+
+.formulario2 {
+  color: white;
+  border: 2px solid black;
+  width: fit-content;
+  border-radius: 10px;
+  background: linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%);
+  margin: auto;
+  padding: 30px;
+}
+.formulario2 input[type=text] {
+  border: 1px solid;
+  border-radius: 5px;
+}
+.formulario2 input[type=email] {
+  border: 1px solid;
+  border-radius: 5px;
+}
+.formulario2 select {
+  border: 1px solid;
+  border-radius: 5px;
+}
+.formulario2 textarea {
+  border: 1px solid;
+  border-radius: 5px;
+}
+.formulario2 input[type=submit] {
+  border: 1px solid;
+  background-color: gray;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+.formulario2 input[type=submit]:hover {
   background-color: black;
 }
 

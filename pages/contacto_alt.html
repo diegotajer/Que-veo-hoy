@@ -37,60 +37,18 @@
     <main>
 
     <h2>Contacto</h2>
-
-
-
     <div class="container">
         <div class="row">
             <div class="col-md-5">
     <p class="contacto-descripcion">En Qué Veo Hoy nos interesa escuchar tus opiniones. <br> Escribinos tus comentarios y sugerencias y te responderemos a la brevedad.</p>
             </div>
             <div class="col-md-7">
-    <form class="formulario2" action="https://formspree.io/f/mzbnanqd" method="POST" >
-        <div class="row">
-            <div class="col-md-6">
-                <input type="text"  placeholder="Nombre" name="Nombre" class="form-control mb-3">
-            </div>
-            <div class="col-md-6">
-                <input type="email"  placeholder="Correo" name="correo" class="form-control mb-3">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <input type="text"  placeholder="País" name="país" class="form-control mb-3">
-            </div>
-            <div class="col-md-6">
-                <input type="text"  placeholder="Ciudad" name="ciudad" class="form-control mb-3">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <select name="tipo"  class="form-select mb-3" >
-                    <option >Comentario</option>
-                    <option >Sugerencia</option>
-                    <option >Crítica</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <textarea cols="30" rows="5" placeholder="Escriba aquí" name=comentario" class="form-control mb-3"></textarea>
-            </div>
-        </div>
-        <div class=" row form-check">
-            <div class="col-md-12">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Me interesa recibir novedades y promociones.
-            </label></div>
-          </div>
-
-
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <input type="submit" value="Enviar" id="enviar" >
-            </div>
-        </div>
+    <form class="formulario" action="https://formspree.io/f/mzbnanqd" method="POST" >
+        Nombre: <input type="text" name="nombre"><br>
+        E-mail: <input type="text" name="email"><br>
+        Comentario:
+        <textarea name="message" rows="5" cols="30"></textarea><br>
+        <input type="submit" value=" Enviar ">
     </form>
 </div>
             </div>
