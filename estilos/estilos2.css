@@ -48,6 +48,8 @@ header .navbar .logo {
 }
 
 .cartelprincipal {
+  display: flex;
+  justify-content: center;
   font-size: 4em;
   color: #333;
   opacity: 0;
@@ -84,7 +86,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
