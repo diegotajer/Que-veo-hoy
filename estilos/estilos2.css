@@ -122,6 +122,10 @@ footer p {
   font-size: auto;
 }
 
+.descripcion {
+  font-size: larger;
+}
+
 /*HOME*/
 .logotapa {
   display: flex;
@@ -166,10 +170,6 @@ footer p {
 }
 
 /*CONTACTO*/
-.descripcion {
-  font-size: larger;
-}
-
 .formulario {
   color: white;
   border: 2px solid black;
